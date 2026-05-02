@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Vaishali Tour & Travels, Bhilai — Rail tickets, flight tickets, tour packages, hotel booking, cab & bus. Call 9752805942."/>
+<meta name="keywords" content="travel agent Bhilai, tour packages Chhattisgarh, rail ticket Bhilai, flight ticket Bhilai, Char Dham tour, Bali tour, Vaishali Tour Travels"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#d63384"/>
+<title>Vaishali Tour & Travels — Bhilai, Chhattisgarh | Tour Packages & Tickets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+/* ── VARIABLES ─────────────────── */
+:root{
+  --pk:#d63384;--pkd:#a01060;--pkl:#f9a8d4;--pkbg:#fef0f5;
+  --ink:#12060d;--i7:rgba(18,6,13,.7);--i4:rgba(18,6,13,.4);--i1:rgba(18,6,13,.1);
+  --cream:#fffbfd;--sand:#f5e8ef;--white:#fff;
+  --F:'Cormorant Garamond',Georgia,serif;
+  --B:'DM Sans',system-ui,sans-serif;
+  --nh:70px;--sp:clamp(60px,10vw,120px);
+}
+
+/* ── RESET ─────────────────────── */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--B);background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+button{font-family:var(--B);cursor:pointer;border:none;background:none}
+:focus-visible{outline:2px solid var(--pk);outline-offset:2px}
+img{display:block;object-fit:cover}
+
+/* ── LAYOUT HELPERS ────────────── */
+.W{max-width:1280px;margin:0 auto;padding:0 clamp(18px,5vw,56px)}
+.ey{font-size:.64rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--pk);display:flex;align-items:center;gap:8px;margin-bottom:.6rem}
+.ey::before{content:'';width:20px;height:1.5px;background:var(--pk);flex-shrink:0}
+.ey.c{justify-content:center}.ey.c::before{display:none}
+.DH{font-family:var(--F);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.1;color:var(--ink)}
+.DH em{font-style:italic;color:var(--pk)}
+.DH.inv{color:var(--white)}
+.BP{display:inline-flex;align-items:center;gap:7px;background:var(--pk);color:#fff;padding:13px 26px;font-size:.68rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;transition:all .3s;cursor:pointer;border:none;font-family:var(--B)}
+.BP:hover{background:var(--pkd);transform:translateY(-2px)}
+.BO{display:inline-flex;align-items:center;gap:7px;background:transparent;color:#fff;padding:12px 24px;font-size:.68rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;border:1.5px solid rgba(255,255,255,.5);transition:all .3s;cursor:pointer;font-family:var(--B)}
+.BO:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.BOD{display:inline-flex;align-items:center;gap:7px;background:transparent;color:var(--pk);padding:12px 24px;font-size:.68rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;border:1.5px solid var(--pk);transition:all .3s;cursor:pointer;font-family:var(--B)}
+.BOD:hover{background:var(--pk);color:#fff}
+
+/* ── ANIMATION ─────────────────── */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+.rv.in{opacity:1;transform:none}
+@keyframes ken{from{transform:scale(1)}to{transform:scale(1.08)}}
+@keyframes ticker{from{top:-100%}to{top:100%}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── NAV ───────────────────────── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:var(--nh);display:flex;align-items:center;transition:background .4s,box-shadow .4s}
+#nav.solid{background:rgba(255,251,253,.97);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--i1)}
+.nav-wrap{width:100%;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,5vw,56px)}
+.logo{display:flex;flex-direction:column;line-height:1;cursor:pointer}
+.logo-name{font-family:var(--F);font-size:1.4rem;font-weight:600;color:#fff;transition:color .4s}
+#nav.solid .logo-name{color:var(--ink)}
+.logo-city{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pk);margin-top:3px;font-weight:600}
+.nav-links{display:flex;gap:1.75rem;align-items:center}
+.nav-link{font-size:.66rem;font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.82);transition:color .3s;cursor:pointer;position:relative}
+.nav-link::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:1.5px;background:var(--pk);transition:width .3s}
+.nav-link:hover::after{width:100%}
+#nav.solid .nav-link{color:var(--i7)}
+.nav-call{background:var(--pk);color:#fff!important;padding:.4rem .9rem;font-size:.64rem!important;font-weight:700!important;letter-spacing:.1em;transition:background .2s!important}
+.nav-call:hover{background:var(--pkd)!important}
+.nav-call::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+.hamburger span{display:block;width:22px;height:1.5px;background:#fff;transition:.3s}
+#nav.solid .hamburger span{background:var(--ink)}
+#mob-menu{display:none;position:fixed;inset:0;z-index:800;background:#12060d;flex-direction:column;align-items:center;justify-content:center;gap:1.75rem}
+#mob-menu.open{display:flex}
+.mob-link{font-family:var(--F);font-size:2rem;font-weight:300;color:rgba(255,251,253,.9);cursor:pointer;transition:color .2s}
+.mob-link:hover{color:var(--pkl)}
+.mob-close{position:absolute;top:18px;right:20px;font-size:26px;color:rgba(255,251,253,.5);cursor:pointer;background:none;border:none}
+
+/* ── HERO ──────────────────────── */
+#hero{position:relative;height:100vh;min-height:560px;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:#1a0010}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top;animation:ken 22s ease-in-out alternate infinite;transition:opacity .5s}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(18,6,13,.86) 0%,rgba(18,6,13,.52) 55%,rgba(18,6,13,.24) 100%)}
+.hero-body{position:relative;z-index:2;padding-top:var(--nh);max-width:660px;padding-left:clamp(18px,5vw,56px);padding-right:clamp(18px,5vw,56px)}
+.hero-tag{font-size:.62rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--pkl);display:flex;align-items:center;gap:10px;margin-bottom:1.2rem}
+.hero-tag::before{content:'';width:26px;height:1.5px;background:var(--pk);display:block;flex-shrink:0}
+.hero-h1{font-family:var(--F);font-size:clamp(2.8rem,6vw,5.4rem);font-weight:600;line-height:1.04;color:#fff;margin-bottom:1.2rem}
+.hero-h1 em{font-style:italic;font-weight:300;color:var(--pkl);display:block}
+.hero-p{font-size:.96rem;font-weight:300;color:rgba(255,255,255,.72);line-height:1.82;margin-bottom:1.9rem;max-width:44ch}
+.hero-btns{display:flex;gap:.85rem;flex-wrap:wrap}
+.hero-dots{position:absolute;bottom:1.75rem;right:clamp(18px,5vw,56px);z-index:2;display:flex;gap:7px}
+.hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:.3s;border:none}
+.hero-dot.active{background:var(--pk);transform:scale(1.3)}
+.scroll-cue{position:absolute;bottom:1.75rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:5px}
+.scroll-line{width:1px;height:42px;background:rgba(255,255,255,.2);position:relative;overflow:hidden}
+.scroll-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--pk);animation:ticker 1.8s ease-in-out infinite}
+.scroll-label{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+
+/* ── STATS ─────────────────────── */
+#stats{background:var(--ink);padding:0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-cell{padding:30px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.07)}
+.stat-cell:last-child{border:none}
+.stat-num{font-family:var(--F);font-size:clamp(1.9rem,3vw,2.9rem);font-weight:600;color:var(--pkl);line-height:1}
+.stat-label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,251,253,.45);margin-top:5px}
+
+/* ── ABOUT ─────────────────────── */
+#about{padding:var(--sp) 0;background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.about-photos{position:relative;padding-bottom:50px;padding-right:48px}
+.about-main{width:100%;aspect-ratio:3/4;overflow:hidden;box-shadow:0 22px 60px rgba(18,6,13,.18)}
+.about-main img{width:100%;height:100%;object-fit:cover}
+.about-accent{position:absolute;bottom:0;right:0;width:55%;aspect-ratio:4/3;overflow:hidden;border:7px solid #fff;box-shadow:0 12px 36px rgba(18,6,13,.2)}
+.about-accent img{width:100%;height:100%;object-fit:cover}
+.about-badge{position:absolute;top:20px;left:-16px;background:var(--pk);color:#fff;width:94px;height:94px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 8px 26px rgba(214,51,132,.4);z-index:2}
+.about-badge strong{font-family:var(--F);font-size:1.9rem;font-weight:700;line-height:1}
+.about-badge small{font-size:.5rem;letter-spacing:.09em;text-transform:uppercase;opacity:.9;padding:0 5px;margin-top:2px}
+.about-p{font-size:.92rem;color:var(--i7);line-height:1.88;margin-bottom:.9rem;font-weight:300}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.4rem 0 1.9rem}
+.af{display:flex;gap:10px;align-items:flex-start}
+.af-ico{width:34px;height:34px;border-radius:50%;background:var(--pkbg);border:1px solid rgba(214,51,132,.2);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.af-title{font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:2px}
+.af-desc{font-size:.72rem;color:var(--i7)}
+
+/* ── SERVICES ──────────────────── */
+#services{padding:var(--sp) 0;background:var(--ink)}
+.svc-hdr{text-align:center;margin-bottom:2.5rem}
+.svc-hdr p{font-size:.9rem;color:rgba(255,251,253,.44);margin-top:.7rem;max-width:50ch;margin-left:auto;margin-right:auto;font-weight:300;line-height:1.7}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.svc-card{background:rgba(255,255,255,.055);padding:2rem 1.5rem;text-align:center;transition:all .3s;position:relative;border:1px solid rgba(255,255,255,.07);cursor:pointer;overflow:hidden}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--pk);transform:scaleX(0);transition:transform .3s;transform-origin:center}
+.svc-card:hover{background:rgba(255,255,255,.09);transform:translateY(-5px)}
+.svc-card:hover::after{transform:scaleX(1)}
+.svc-card:hover .svc-title{color:var(--pkl)}
+.svc-ico{font-size:2.3rem;margin-bottom:.9rem;display:block;transition:transform .3s}
+.svc-card:hover .svc-ico{transform:scale(1.12)}
+.svc-title{font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.4rem;transition:color .3s}
+.svc-desc{font-size:.74rem;color:rgba(255,251,253,.46);line-height:1.6}
+.svc-badge{position:absolute;top:9px;right:9px;background:var(--pk);color:#fff;font-size:.5rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px}
+
+/* ── PACKAGES ──────────────────── */
+#packages{padding:var(--sp) 0;background:var(--sand)}
+.pkg-hdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem}
+.pkg-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:340px 340px;gap:3px}
+.pkg-card{position:relative;overflow:hidden;cursor:pointer;background:#2a0f1c}
+.pkg-card:first-child{grid-row:span 2}
+.pkg-img-wrap{position:absolute;inset:0}
+.pkg-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .8s cubic-bezier(.4,0,.2,1)}
+.pkg-card:hover .pkg-img-wrap img{transform:scale(1.07)}
+.pkg-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(18,6,13,.95) 0%,rgba(18,6,13,.05) 52%)}
+.pkg-body{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:padding .35s}
+.pkg-card:hover .pkg-body{padding-bottom:30px}
+.pkg-tag{display:inline-block;background:var(--pk);color:#fff;font-size:.54rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:3px 9px;margin-bottom:7px}
+.pkg-name{font-family:var(--F);font-size:clamp(1.15rem,2vw,1.7rem);font-weight:600;color:#fff;line-height:1.2;margin-bottom:4px}
+.pkg-meta{font-size:.68rem;color:rgba(255,251,253,.5);display:flex;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.pkg-enquire-tag{display:inline-block;background:rgba(214,51,132,.18);border:1px solid rgba(214,51,132,.4);color:var(--pkl);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px}
+.pkg-actions{display:flex;gap:7px;margin-top:10px;opacity:0;transform:translateY(7px);transition:all .3s}
+.pkg-card:hover .pkg-actions{opacity:1;transform:none}
+.pkg-btn{font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border:1px solid rgba(255,255,255,.4);color:#fff;transition:all .22s;cursor:pointer;font-family:var(--B);background:transparent}
+.pkg-btn:hover,.pkg-btn.primary{background:var(--pk);border-color:var(--pk)}
+
+/* ── DESTINATIONS ──────────────── */
+#dests{padding:var(--sp) 0;overflow:hidden;background:var(--cream)}
+.dests-hdr{text-align:center;margin-bottom:2.5rem}
+.dests-track-wrap{overflow:hidden}
+.dests-track{display:flex;gap:12px;animation:marquee 34s linear infinite}
+.dests-track:hover{animation-play-state:paused}
+.dest-chip{flex-shrink:0;width:224px;height:306px;position:relative;overflow:hidden;cursor:pointer;background:#2a0f1c}
+.dest-chip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.dest-chip:hover img{transform:scale(1.1)}
+.dest-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(18,6,13,.88),transparent 58%)}
+.dest-info{position:absolute;bottom:0;left:0;right:0;padding:13px 13px 11px}
+.dest-name{font-family:var(--F);font-size:1.18rem;font-weight:600;color:#fff;line-height:1}
+.dest-sub{font-size:.62rem;color:rgba(255,251,253,.58);letter-spacing:.07em;margin-top:3px}
+
+/* ── REVIEWS ───────────────────── */
+#reviews{padding:var(--sp) 0;background:linear-gradient(145deg,#1a0610 0%,#2e0f1c 55%,#1a0610 100%);position:relative;overflow:hidden}
+#reviews::before{content:'\201C';position:absolute;top:-80px;left:14px;font-family:var(--F);font-size:380px;font-weight:700;color:rgba(255,255,255,.018);line-height:1;pointer-events:none}
+.reviews-inner{padding:0 clamp(18px,5vw,56px)}
+.reviews-hdr{text-align:center;margin-bottom:2.5rem}
+.reviews-score-row{display:flex;align-items:center;justify-content:center;gap:2rem;margin-bottom:2.75rem;flex-wrap:wrap}
+.score-big{font-family:var(--F);font-size:5rem;font-weight:700;color:var(--pkl);line-height:1}
+.score-stars{color:#fbbc04;font-size:1.3rem;letter-spacing:.1rem;display:block;margin:.25rem 0}
+.score-meta{font-size:.65rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,251,253,.35)}
+.score-sep{width:1px;height:60px;background:rgba(255,255,255,.1)}
+.g-logo{display:flex;gap:1px;font-weight:700;font-size:1.15rem;align-items:center}
+.g-logo span:nth-child(1){color:#4285f4}
+.g-logo span:nth-child(2){color:#ea4335}
+.g-logo span:nth-child(3){color:#fbbc04}
+.g-logo span:nth-child(4){color:#4285f4}
+.g-logo span:nth-child(5){color:#34a853}
+.g-logo span:nth-child(6){color:#ea4335}
+.g-verified{font-size:.62rem;color:rgba(255,251,253,.38);margin-top:4px;letter-spacing:.07em}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2.5rem}
+.review-card{background:rgba(255,255,255,.055);padding:1.75rem;border:1px solid rgba(255,255,255,.07);transition:all .3s}
+.review-card:hover{background:rgba(255,255,255,.09);border-color:rgba(214,51,132,.35);transform:translateY(-4px)}
+.rc-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.rc-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--F);font-size:1.1rem;font-weight:700;color:#fff;flex-shrink:0}
+.rc-name{font-size:.88rem;font-weight:600;color:rgba(255,251,253,.92)}
+.rc-stars-row{display:flex;align-items:center;gap:.45rem;margin-top:2px}
+.rc-stars{color:#fbbc04;font-size:.72rem;letter-spacing:.04em}
+.rc-date{font-size:.62rem;color:rgba(255,251,253,.35)}
+.rc-quote{font-family:var(--F);font-size:.94rem;font-style:italic;color:rgba(255,251,253,.78);line-height:1.75;margin-bottom:10px}
+.rc-source{font-size:.58rem;color:rgba(255,251,253,.25);display:flex;align-items:center;gap:4px}
+.rc-source::before{content:'G';background:#4285f4;color:#fff;width:13px;height:13px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.5rem;font-weight:700;flex-shrink:0}
+.reviews-cta{text-align:center}
+.reviews-cta a{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(214,51,132,.4);color:var(--pkl);padding:12px 24px;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:all .3s}
+.reviews-cta a:hover{background:rgba(214,51,132,.12);border-color:var(--pk)}
+
+/* ── WHATSAPP CTA ──────────────── */
+#wa-cta{background:var(--pk);padding:3.5rem 0;text-align:center}
+.wa-cta-inner h2{font-family:var(--F);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;color:#fff;margin-bottom:.5rem;line-height:1.2}
+.wa-cta-inner h2 em{font-style:italic;font-weight:300;font-family:var(--F)}
+.wa-cta-inner p{font-size:.9rem;color:rgba(255,255,255,.78);margin-bottom:1.75rem;font-weight:300}
+.wa-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--pk);padding:13px 28px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:all .3s;font-family:var(--B)}
+.btn-wa:hover{background:#f0e0e8;transform:translateY(-2px)}
+.btn-wa-call{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;padding:12px 26px;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:1.5px solid rgba(255,255,255,.65);transition:all .3s;font-family:var(--B)}
+.btn-wa-call:hover{background:rgba(255,255,255,.12);border-color:#fff}
+
+/* ── CONTACT ───────────────────── */
+#contact{padding:var(--sp) 0;background:var(--sand)}
+.contact-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,76px);align-items:start}
+.contact-title{font-family:var(--F);font-size:1.65rem;font-weight:400;color:var(--ink);margin-bottom:8px}
+.contact-title em{font-style:italic;color:var(--pk)}
+.contact-lead{font-size:.88rem;color:var(--i7);line-height:1.8;margin-bottom:1.6rem;font-weight:300}
+.contact-items{display:flex;flex-direction:column;gap:12px;margin-bottom:1.6rem}
+.contact-row{display:flex;gap:11px;align-items:flex-start}
+.contact-ico{width:38px;height:38px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;box-shadow:0 3px 10px rgba(18,6,13,.1)}
+.contact-lbl{font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--i4);margin-bottom:3px}
+.contact-val{font-size:.84rem;color:var(--ink);line-height:1.55}
+.contact-val a{color:var(--pk);font-weight:600}
+.phone-list{display:flex;flex-direction:column;gap:3px;margin-top:3px}
+.phone-list a{font-size:.9rem;font-weight:600;color:var(--pk);transition:color .2s}
+.phone-list a:hover{color:var(--pkd)}
+#map-wrap{overflow:hidden;box-shadow:0 7px 28px rgba(18,6,13,.13);margin-top:1.6rem}
+#map-wrap iframe{width:100%;height:230px;border:none;display:block}
+/* Form */
+.form-box{background:#fff;padding:clamp(22px,5vw,42px);box-shadow:0 18px 56px rgba(18,6,13,.1)}
+.form-title{font-family:var(--F);font-size:1.55rem;font-weight:400;margin-bottom:1.5rem;color:var(--ink)}
+.form-title em{font-style:italic;color:var(--pk)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-group{margin-bottom:12px}
+.form-group label{display:block;font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--i4);margin-bottom:4px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:1.5px solid var(--sand);background:var(--cream);color:var(--ink);font-size:.88rem;outline:none;transition:border-color .2s;-webkit-appearance:none;font-family:var(--B);border-radius:0}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--pk)}
+.form-group textarea{resize:vertical;min-height:88px;line-height:1.55}
+.form-group select option{background:#fff}
+.form-submit{width:100%;background:var(--pk);color:#fff;padding:13px;font-size:.7rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;border:none;cursor:pointer;font-family:var(--B);transition:background .25s;margin-top:4px;display:block}
+.form-submit:hover{background:var(--pkd)}
+
+/* ── FOOTER ────────────────────── */
+#footer{background:var(--ink);padding:52px 0 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-name{font-family:var(--F);font-size:1.3rem;font-weight:600;color:rgba(255,251,253,.9);margin-bottom:4px}
+.footer-city{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pk);display:block;margin-bottom:10px;font-weight:600}
+.footer-desc{font-size:.8rem;color:rgba(255,251,253,.42);line-height:1.78;max-width:26ch}
+.footer-phones{display:flex;flex-direction:column;gap:4px;margin-top:12px}
+.footer-phones a{font-size:.86rem;font-weight:600;color:var(--pk);transition:color .2s}
+.footer-phones a:hover{color:var(--pkl)}
+.footer-email{font-size:.82rem;color:rgba(255,251,253,.5);margin-top:6px;transition:color .2s;display:block}
+.footer-email:hover{color:var(--cream)}
+.footer-hours{font-size:.76rem;color:rgba(255,251,253,.48);margin-top:8px;line-height:1.7}
+.footer-hours a{color:var(--pk)}
+.foot-col-title{font-size:.58rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--pk);margin-bottom:.9rem}
+.foot-col-links{display:flex;flex-direction:column;gap:7px}
+.foot-col-links a{font-size:.8rem;color:rgba(255,251,253,.46);transition:color .2s;cursor:pointer}
+.foot-col-links a:hover{color:rgba(255,251,253,.9)}
+.footer-bottom{border-top:1px solid rgba(255,251,253,.09);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-copy{font-size:.68rem;color:rgba(255,251,253,.36)}
+
+/* ── FLOATING BUTTONS ──────────── */
+#back-top{position:fixed;bottom:22px;right:22px;z-index:700;width:42px;height:42px;background:var(--pk);color:#fff;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:all .3s;font-size:1rem;box-shadow:0 4px 16px rgba(214,51,132,.4);border-radius:50%;cursor:pointer;border:none;font-family:var(--B)}
+#back-top.show{opacity:1;pointer-events:auto}
+#back-top:hover{background:var(--pkd);transform:translateY(-3px)}
+#whatsapp-btn{position:fixed;bottom:22px;left:22px;z-index:700;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform .3s;font-size:1.5rem;text-decoration:none}
+#whatsapp-btn:hover{transform:scale(1.1)}
+
+
+/* ── RESPONSIVE ────────────────── */
+@media(max-width:1100px){
+  .pkg-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .pkg-card:first-child{grid-row:auto}
+  .pkg-card{height:300px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .svc-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:900px){
+  .nav-links{display:none}.hamburger{display:flex}
+  .about-grid{grid-template-columns:1fr}
+  .about-photos{padding:0 0 42px;padding-right:0}
+  .about-badge{left:auto;right:-14px}
+  .reviews-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .pkg-grid{grid-template-columns:1fr}.pkg-card{height:270px}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .wa-buttons{flex-direction:column;align-items:center}
+  .about-feats{grid-template-columns:1fr}
+  .about-photos{padding-right:0}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <div class="logo" onclick="scrollTo({top:0,behavior:'smooth'})">
+      <span class="logo-name">Vaishali Tour &amp; Travels</span>
+      <span class="logo-city">Bhilai, Chhattisgarh</span>
+    </div>
+    <div class="nav-links">
+      <span class="nav-link" onclick="goto('about')">About</span>
+      <span class="nav-link" onclick="goto('services')">Services</span>
+      <span class="nav-link" onclick="goto('packages')">Packages</span>
+      <span class="nav-link" onclick="goto('dests')">Destinations</span>
+      <span class="nav-link" onclick="goto('reviews')">Reviews</span>
+      <span class="nav-link" onclick="goto('contact')">Contact</span>
+      <a href="tel:+919630835683" class="nav-link nav-call">📞 Call Now</a>
+    </div>
+    <button class="hamburger" id="ham-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mob-menu" role="dialog" aria-label="Navigation menu">
+  <button class="mob-close" id="mob-close" aria-label="Close menu">✕</button>
+  <span class="mob-link" onclick="goto('about')">About</span>
+  <span class="mob-link" onclick="goto('services')">Services</span>
+  <span class="mob-link" onclick="goto('packages')">Packages</span>
+  <span class="mob-link" onclick="goto('dests')">Destinations</span>
+  <span class="mob-link" onclick="goto('reviews')">Reviews</span>
+  <span class="mob-link" onclick="goto('contact')">Contact</span>
+  <a href="tel:+919630835683" style="color:var(--pkl);font-size:1.2rem;font-family:var(--F)">📞 9752805942</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <img id="hero-img" referrerpolicy="no-referrer"
+      src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1600&q=85&auto=format&fit=crop"
+      onerror="this.onerror=null;this.src='https://picsum.photos/seed/india-travel/1600/900'"
+      alt="Taj Mahal, Agra — India travel"/>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-body">
+    <p class="hero-tag">Bhilai's Trusted Travel Partner · Est. 2009</p>
+    <h1 class="hero-h1">Your One-Stop<em>Travel Partner in Bhilai</em></h1>
+    <p class="hero-p">From a simple train ticket to a dream international holiday — we make every journey smooth, affordable and unforgettable for families across Chhattisgarh.</p>
+    <div class="hero-btns">
+      <button class="BP" onclick="goto('packages')">View Tour Packages →</button>
+      <button class="BO" onclick="goto('contact')">Book Now</button>
+    </div>
+  </div>
+  <div class="hero-dots" id="hero-dots"></div>
+  <div class="scroll-cue">
+    <div class="scroll-line"></div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stats-grid">
+    <div class="stat-cell rv"><div class="stat-num">5,000+</div><div class="stat-label">Happy Travellers</div></div>
+    <div class="stat-cell rv"><div class="stat-num">120+</div><div class="stat-label">Tour Packages</div></div>
+    <div class="stat-cell rv"><div class="stat-num">15+</div><div class="stat-label">Years in Bhilai</div></div>
+    <div class="stat-cell rv"><div class="stat-num">4.8 ★</div><div class="stat-label">Google Rating</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="W"><div class="about-grid">
+    <div class="about-photos rv">
+      <div class="about-badge"><strong>15+</strong><small>Years of Trust</small></div>
+      <div class="about-main">
+        <img referrerpolicy="no-referrer"
+          src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=85&auto=format&fit=crop"
+          onerror="this.onerror=null;this.src='https://picsum.photos/seed/rajasthan-palace/800/1067'"
+          alt="Amber Fort, Jaipur — Rajasthan"/>
+      </div>
+      <div class="about-accent">
+        <img referrerpolicy="no-referrer"
+          src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=85&auto=format&fit=crop"
+          onerror="this.onerror=null;this.src='https://picsum.photos/seed/kerala-backwaters/600/450'"
+          alt="Kerala backwaters houseboat"/>
+      </div>
+    </div>
+    <div class="rv" style="color:#12060d">
+      <div class="ey">Who We Are</div>
+      <h2 class="DH" style="margin-bottom:1.2rem">Bhilai's Most <em>Trusted Travel</em> Agency</h2>
+      <p class="about-p">Vaishali Tour &amp; Travels has proudly served the people of Chhattisgarh for over 15 years. We are a full-service travel company based in Bhilai, specialising in affordable tour packages, pilgrimage tours, honeymoon trips and group travel — all meticulously planned for every budget.</p>
+      <p class="about-p">Whether you need a Tatkal train ticket today or a 10-day international holiday next month, our experienced team handles every detail so you can focus on enjoying the journey.</p>
+      <div class="about-feats">
+        <div class="af"><div class="af-ico">🏆</div><div><div class="af-title">15+ Years Experience</div><div class="af-desc">Trusted by 5,000+ families in Bhilai</div></div></div>
+        <div class="af"><div class="af-ico">📞</div><div><div class="af-title">24/7 On-Call Support</div><div class="af-desc">Always available on phone &amp; WhatsApp</div></div></div>
+        <div class="af"><div class="af-ico">💰</div><div><div class="af-title">Best Price Guarantee</div><div class="af-desc">Lowest rates, no hidden charges ever</div></div></div>
+        <div class="af"><div class="af-ico">🎯</div><div><div class="af-title">End-to-End Planning</div><div class="af-desc">From booking to return, we handle all</div></div></div>
+      </div>
+      <button class="BP" onclick="goto('contact')">Get a Free Quote →</button>
+    </div>
+  </div></div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="W">
+    <div class="svc-hdr rv">
+      <div class="ey c" style="color:rgba(249,168,212,.7)">What We Offer</div>
+      <h2 class="DH inv">All Your Travel Needs, <em>One Place</em></h2>
+      <p>Rail tickets, flights, hotels, tour packages, cabs, buses, visa support &amp; more — all from our Bhilai office. No need to go anywhere else.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-ico">🚆</span><div class="svc-title">Rail Tickets</div><p class="svc-desc">Confirmed tickets for any route across India. Tatkal &amp; group bookings handled quickly.</p></div>
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-badge">Popular</span><span class="svc-ico">✈️</span><div class="svc-title">Flight Tickets</div><p class="svc-desc">All domestic &amp; international airlines at best fares with instant confirmation.</p></div>
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-badge">Bestseller</span><span class="svc-ico">🗺️</span><div class="svc-title">Tour Packages</div><p class="svc-desc">Honeymoon, family, pilgrimage, adventure &amp; group tours across India &amp; abroad.</p></div>
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-ico">🏨</span><div class="svc-title">Hotel Booking</div><p class="svc-desc">Budget to luxury hotels at best rates — all destinations, all budgets covered.</p></div>
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-ico">🚖</span><div class="svc-title">Cab / Taxi</div><p class="svc-desc">AC cars, SUVs &amp; tempo travellers for local, outstation &amp; airport transfers.</p></div>
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-ico">🚌</span><div class="svc-title">Bus Tickets</div><p class="svc-desc">Sleeper, AC &amp; Volvo buses across Chhattisgarh and all major interstate routes.</p></div>
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-ico">🛕</span><div class="svc-title">Pilgrimage Tours</div><p class="svc-desc">Char Dham, Shirdi, Tirupati, Vaishno Devi, Jagannath Puri &amp; all major pilgrim circuits.</p></div>
+      <div class="svc-card rv" onclick="goto('contact')"><span class="svc-ico">🪪</span><div class="svc-title">Visa Assistance</div><p class="svc-desc">Complete visa documentation for Thailand, Dubai, Singapore, Europe &amp; beyond.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="W">
+    <div class="pkg-hdr rv">
+      <div>
+        <div class="ey" style="margin-bottom:.5rem">Handpicked For You</div>
+        <h2 class="DH">Popular Tour <em>Packages</em></h2>
+      </div>
+      <button class="BOD" onclick="goto('contact')">Request Custom Package</button>
+    </div>
+  </div>
+  <div class="W" style="padding-top:0">
+    <div class="pkg-grid">
+
+      <!-- Golden Triangle — TALL featured card -->
+      <div class="pkg-card">
+        <div class="pkg-img-wrap">
+          <img referrerpolicy="no-referrer"
+            src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=900&q=85&auto=format&fit=crop"
+            onerror="this.onerror=null;this.src='https://picsum.photos/seed/taj-mahal/900/1200'"
+            alt="Taj Mahal, Agra — Golden Triangle tour"/>
+        </div>
+        <div class="pkg-shade"></div>
+        <div class="pkg-body">
+          <span class="pkg-tag">Bestseller</span>
+          <h3 class="pkg-name">Golden Triangle<br>Delhi · Agra · Jaipur</h3>
+          <div class="pkg-meta"><span>📅 6 Nights 7 Days</span><span>🚌 AC Transport</span><span>🏨 Hotels Included</span></div>
+          <div class="pkg-enquire-tag">Contact Us for Price</div>
+          <div class="pkg-actions">
+            <button class="pkg-btn primary" onclick="goto('contact')">Book Now</button>
+            <button class="pkg-btn" onclick="goto('contact')">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goa -->
+      <div class="pkg-card">
+        <div class="pkg-img-wrap">
+          <img referrerpolicy="no-referrer"
+            src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=85&auto=format&fit=crop"
+            onerror="this.onerror=null;this.src='https://picsum.photos/seed/goa-beach/800/700'"
+            alt="Goa beach"/>
+        </div>
+        <div class="pkg-shade"></div>
+        <div class="pkg-body">
+          <span class="pkg-tag">Honeymoon</span>
+          <h3 class="pkg-name">Goa Beach Getaway</h3>
+          <div class="pkg-meta"><span>📅 4 Nights 5 Days</span><span>🏖 Beach Holiday</span></div>
+          <div class="pkg-enquire-tag">Contact Us for Price</div>
+          <div class="pkg-actions">
+            <button class="pkg-btn primary" onclick="goto('contact')">Book Now</button>
+            <button class="pkg-btn" onclick="goto('contact')">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Andaman -->
+      <div class="pkg-card">
+        <div class="pkg-img-wrap">
+          <img referrerpolicy="no-referrer"
+            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=85&auto=format&fit=crop"
+            onerror="this.onerror=null;this.src='https://picsum.photos/seed/andaman/800/700'"
+            alt="Andaman Islands clear water"/>
+        </div>
+        <div class="pkg-shade"></div>
+        <div class="pkg-body">
+          <span class="pkg-tag">Island Escape</span>
+          <h3 class="pkg-name">Andaman &amp; Nicobar Islands</h3>
+          <div class="pkg-meta"><span>📅 5 Nights 6 Days</span><span>🌊 Beach &amp; Adventure</span></div>
+          <div class="pkg-enquire-tag">Contact Us for Price</div>
+          <div class="pkg-actions">
+            <button class="pkg-btn primary" onclick="goto('contact')">Book Now</button>
+            <button class="pkg-btn" onclick="goto('contact')">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manali -->
+      <div class="pkg-card">
+        <div class="pkg-img-wrap">
+          <img referrerpolicy="no-referrer"
+            src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=85&auto=format&fit=crop"
+            onerror="this.onerror=null;this.src='https://picsum.photos/seed/manali-snow/800/700'"
+            alt="Manali snow mountains, Himachal Pradesh"/>
+        </div>
+        <div class="pkg-shade"></div>
+        <div class="pkg-body">
+          <span class="pkg-tag">Adventure</span>
+          <h3 class="pkg-name">Manali &amp; Shimla Hills</h3>
+          <div class="pkg-meta"><span>📅 7 Nights 8 Days</span><span>⛰ Snow Adventure</span></div>
+          <div class="pkg-enquire-tag">Contact Us for Price</div>
+          <div class="pkg-actions">
+            <button class="pkg-btn primary" onclick="goto('contact')">Book Now</button>
+            <button class="pkg-btn" onclick="goto('contact')">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bangkok -->
+      <div class="pkg-card">
+        <div class="pkg-img-wrap">
+          <img referrerpolicy="no-referrer"
+            src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=800&q=85&auto=format&fit=crop"
+            onerror="this.onerror=null;this.src='https://picsum.photos/seed/bangkok-thailand/800/700'"
+            alt="Bangkok, Thailand"/>
+        </div>
+        <div class="pkg-shade"></div>
+        <div class="pkg-body">
+          <span class="pkg-tag">International</span>
+          <h3 class="pkg-name">Bangkok &amp; Pattaya</h3>
+          <div class="pkg-meta"><span>📅 5 Nights 6 Days</span><span>✈ Flights Included</span></div>
+          <div class="pkg-enquire-tag">Contact Us for Price</div>
+          <div class="pkg-actions">
+            <button class="pkg-btn primary" onclick="goto('contact')">Book Now</button>
+            <button class="pkg-btn" onclick="goto('contact')">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="dests">
+  <div class="W"><div class="dests-hdr rv">
+    <div class="ey c" style="margin-bottom:.5rem">We Cover It All</div>
+    <h2 class="DH" style="text-align:center">Popular <em>Destinations</em></h2>
+  </div></div>
+  <div class="dests-track-wrap" style="margin-top:2.5rem">
+    <div class="dests-track">
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1548013146-72479768bada?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/delhi-india/500/700'" alt="Delhi Red Fort"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Delhi</div><div class="dest-sub">Heritage &amp; history</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/rajasthan/500/700'" alt="Amber Fort, Rajasthan"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Rajasthan</div><div class="dest-sub">Land of Maharajas</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/goa/500/700'" alt="Goa beach"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Goa</div><div class="dest-sub">Sun, sand &amp; sea</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/manali/500/700'" alt="Manali snow"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Manali</div><div class="dest-sub">Snow &amp; adventure</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kashmir-lake/500/700'" alt="Dal Lake, Kashmir"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Kashmir</div><div class="dest-sub">Paradise on Earth</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kedarnath/500/700'" alt="Kedarnath temple, Uttarakhand"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Kedarnath</div><div class="dest-sub">Divine pilgrimage</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/bali-temple/500/700'" alt="Tanah Lot, Bali"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Bali</div><div class="dest-sub">Island of the Gods</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kerala/500/700'" alt="Kerala backwaters"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Kerala</div><div class="dest-sub">God's own country</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/dubai/500/700'" alt="Dubai skyline"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Dubai</div><div class="dest-sub">City of the future</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/thailand/500/700'" alt="Thailand beach"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Thailand</div><div class="dest-sub">Land of smiles</div></div></div>
+      <!-- Duplicate set for seamless infinite loop -->
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1548013146-72479768bada?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/delhi-india/500/700'" alt="Delhi"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Delhi</div><div class="dest-sub">Heritage &amp; history</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/rajasthan/500/700'" alt="Rajasthan"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Rajasthan</div><div class="dest-sub">Land of Maharajas</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/goa/500/700'" alt="Goa"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Goa</div><div class="dest-sub">Sun, sand &amp; sea</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/manali/500/700'" alt="Manali"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Manali</div><div class="dest-sub">Snow &amp; adventure</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1568454537842-d933259bb258?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kashmir-lake/500/700'" alt="Kashmir"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Kashmir</div><div class="dest-sub">Paradise on Earth</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kedarnath-temple/500/700'" alt="Kedarnath"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Kedarnath</div><div class="dest-sub">Divine pilgrimage</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/bali-temple/500/700'" alt="Bali"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Bali</div><div class="dest-sub">Island of the Gods</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kerala/500/700'" alt="Kerala"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Kerala</div><div class="dest-sub">God's own country</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/dubai/500/700'" alt="Dubai"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Dubai</div><div class="dest-sub">City of the future</div></div></div>
+      <div class="dest-chip"><img referrerpolicy="no-referrer" src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=500&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/thailand/500/700'" alt="Thailand"/><div class="dest-shade"></div><div class="dest-info"><div class="dest-name">Thailand</div><div class="dest-sub">Land of smiles</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="reviews-inner">
+    <div class="reviews-hdr rv">
+      <div class="ey c" style="color:rgba(249,168,212,.6);margin-bottom:.5rem">Customer Feedback</div>
+      <h2 class="DH inv">What Our <em>Clients Say</em></h2>
+    </div>
+    <div class="reviews-score-row rv">
+      <div>
+        <div class="score-big">4.8</div>
+        <span class="score-stars">★★★★★</span>
+        <div class="score-meta">Google Reviews · Bhilai</div>
+      </div>
+      <div class="score-sep"></div>
+      <div>
+        <div class="g-logo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+        <div class="g-verified">Verified Business</div>
+      </div>
+    </div>
+    <div class="reviews-grid rv">
+      <div class="review-card">
+        <div class="rc-top"><div class="rc-avatar" style="background:#d63384">R</div><div><div class="rc-name">Rohit &amp; Priya Agrawal</div><div class="rc-stars-row"><span class="rc-stars">★★★★★</span><span class="rc-date">2 months ago</span></div></div></div>
+        <p class="rc-quote">"We booked our Goa anniversary trip through Vaishali Tour. Hotel, transfers, sightseeing — everything was arranged perfectly with no last-minute surprises. Outstanding service from the entire team."</p>
+        <div class="rc-source">Google Review · Bhilai</div>
+      </div>
+      <div class="review-card">
+        <div class="rc-top"><div class="rc-avatar" style="background:#9d174d">P</div><div><div class="rc-name">Priya Dewangan</div><div class="rc-stars-row"><span class="rc-stars">★★★★★</span><span class="rc-date">1 month ago</span></div></div></div>
+        <p class="rc-quote">"Our group of 18 went for Char Dham Yatra. The entire journey — transport, hotels, and puja bookings — was flawlessly managed. Truly the best travel agency in Chhattisgarh."</p>
+        <div class="rc-source">Google Review · Bhilai</div>
+      </div>
+      <div class="review-card">
+        <div class="rc-top"><div class="rc-avatar" style="background:#be185d">S</div><div><div class="rc-name">Suresh Kumar Sahu</div><div class="rc-stars-row"><span class="rc-stars">★★★★★</span><span class="rc-date">3 months ago</span></div></div></div>
+        <p class="rc-quote">"Booked a Thailand package — no hidden charges, great hotels in Bangkok and Pattaya, and prompt support throughout. Will definitely use Vaishali Tour for our next international trip."</p>
+        <div class="rc-source">Google Review · Bhilai</div>
+      </div>
+      <div class="review-card">
+        <div class="rc-top"><div class="rc-avatar" style="background:#831843">A</div><div><div class="rc-name">Anjali &amp; Ravi Verma</div><div class="rc-stars-row"><span class="rc-stars">★★★★★</span><span class="rc-date">5 months ago</span></div></div></div>
+        <p class="rc-quote">"Our Manali honeymoon was beautifully curated — lovely hotel, courteous driver and a perfect itinerary. Every small detail was taken care of. Highly recommended for all couples."</p>
+        <div class="rc-source">Google Review · Bhilai</div>
+      </div>
+      <div class="review-card">
+        <div class="rc-top"><div class="rc-avatar" style="background:#a01060">M</div><div><div class="rc-name">Mukesh Patel</div><div class="rc-stars-row"><span class="rc-stars">★★★★★</span><span class="rc-date">6 months ago</span></div></div></div>
+        <p class="rc-quote">"What started as a Tatkal train booking turned into a long relationship. Now they handle all our family's travel — flight tickets, hotels, tours. Reliable, affordable and always reachable."</p>
+        <div class="rc-source">Google Review · Bhilai</div>
+      </div>
+      <div class="review-card">
+        <div class="rc-top"><div class="rc-avatar" style="background:#db2777">N</div><div><div class="rc-name">Neha Chandrakar</div><div class="rc-stars-row"><span class="rc-stars">★★★★★</span><span class="rc-date">4 months ago</span></div></div></div>
+        <p class="rc-quote">"Flight bookings handled within minutes at a better price than online portals. Staff are knowledgeable and always available on WhatsApp. My go-to agency for all travel needs in Bhilai."</p>
+        <div class="rc-source">Google Review · Bhilai</div>
+      </div>
+    </div>
+    <div class="reviews-cta rv">
+      <a href="https://maps.app.goo.gl/wxjisRn4LZ5dXN8j9" target="_blank" rel="noopener">🔍 &nbsp;Read All Reviews on Google Maps →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP CTA STRIP -->
+<section id="wa-cta">
+  <div class="W"><div class="wa-cta-inner">
+    <h2>Ready to Plan Your <em>Next Trip?</em></h2>
+    <p>Chat with us on WhatsApp or call — we respond within minutes, 7 days a week, 9 AM to 9 PM.</p>
+    <div class="wa-buttons">
+      <a class="btn-wa" href="https://api.whatsapp.com/send?phone=919630835683&text=Hello%20Vaishali%20Tour%20%26%20Travels!%20I%20would%20like%20to%20enquire%20about%20a%20trip." target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      <a class="btn-wa-call" href="tel:+919630835683">📞 Call 9752805942</a>
+    </div>
+  </div></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="W"><div class="contact-grid">
+
+    <!-- Contact Info -->
+    <div class="rv">
+      <div class="ey" style="margin-bottom:.5rem">Get In Touch</div>
+      <div class="contact-title">Plan Your <em>Perfect Journey</em></div>
+      <p class="contact-lead">Visit our Bhilai office or reach us on call or WhatsApp. We will plan the best holiday within your budget — no obligation, free consultation.</p>
+      <div class="contact-items">
+        <div class="contact-row">
+          <div class="contact-ico">📍</div>
+          <div>
+            <div class="contact-lbl">Office Address</div>
+            <div class="contact-val">Vaishali Tour &amp; Travels<br>Bhilai, Chhattisgarh — 490001</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">📞</div>
+          <div>
+            <div class="contact-lbl">Call / WhatsApp</div>
+            <div class="phone-list">
+              <a href="tel:+919630835683">9630835683</a>
+              <a href="tel:+919752805942">9752805942</a>
+              <a href="tel:+919300788555">9300788555</a>
+            </div>
+            <div class="contact-val" style="font-size:.76rem;color:var(--i4);margin-top:4px">Mon – Sun, 9 AM to 9 PM</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">✉️</div>
+          <div>
+            <div class="contact-lbl">Email</div>
+            <div class="contact-val"><a href="mailto:Vaishalitourt@gmail.com">Vaishalitourt@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">🗺️</div>
+          <div>
+            <div class="contact-lbl">Find Us</div>
+            <div class="contact-val"><a href="https://maps.app.goo.gl/wxjisRn4LZ5dXN8j9" target="_blank" rel="noopener">Get directions on Google Maps →</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="map-wrap">
+        <iframe
+          src="https://maps.google.com/maps?q=21.2203981,81.3549788&z=15&output=embed"
+          title="Vaishali Tour & Travels location on Google Maps"
+          allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Enquiry Form — FormSubmit.co sends directly to Gmail, no backend needed -->
+    <div class="rv" style="transition-delay:.15s">
+      <div class="form-box">
+        <div class="form-title">Send an <em>Enquiry</em></div>
+        <form
+          action="https://formsubmit.co/vaishalitourt@gmail.com"
+          method="POST"
+          id="enquiry-form">
+
+          <!-- FormSubmit configuration -->
+          <input type="hidden" name="_subject" value="New Enquiry — Vaishali Tour & Travels, Bhilai"/>
+          <input type="hidden" name="_captcha" value="false"/>
+          <input type="hidden" name="_template" value="table"/>
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting Vaishali Tour & Travels, Bhilai! We have received your enquiry and will call you very soon. For urgent assistance please call us at: 9630835683 or 9752805942. — Vaishali Tour & Travels Team"/>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" name="First Name" placeholder="Ramesh" required/>
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" name="Last Name" placeholder="Sahu" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Mobile / WhatsApp *</label>
+            <input type="tel" name="Mobile Number" placeholder="98765 43210" pattern="[0-9 +-]{10,15}" title="Please enter a valid mobile number" required/>
+          </div>
+          <div class="form-group">
+            <label>Email Address (optional)</label>
+            <input type="email" name="Email" placeholder="you@example.com"/>
+          </div>
+          <div class="form-group">
+            <label>What Do You Need?</label>
+            <select name="Service Required">
+              <option value="">Select a service...</option>
+              <optgroup label="─── Tickets ───">
+                <option>Rail Ticket Booking</option>
+                <option>Flight Ticket Booking</option>
+                <option>Bus Ticket Booking</option>
+              </optgroup>
+              <optgroup label="─── Tour Packages ───">
+                <option>Golden Triangle — Delhi Agra Jaipur</option>
+                <option>Goa Beach Holiday</option>
+                <option>Andaman &amp; Nicobar Islands</option>
+                <option>Manali &amp; Shimla</option>
+                <option>Kashmir Tour</option>
+                <option>Bangkok &amp; Pattaya Thailand</option>
+                <option>Bali Tour</option>
+                <option>Kerala Tour</option>
+                <option>Char Dham &amp; Pilgrimage Tour</option>
+                <option>Honeymoon Package</option>
+                <option>Custom / Group Tour</option>
+              </optgroup>
+              <optgroup label="─── Other Services ───">
+                <option>Hotel Booking</option>
+                <option>Cab / Taxi Booking</option>
+                <option>Visa Assistance</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Preferred Travel Date</label>
+              <input type="date" name="Travel Date"/>
+            </div>
+            <div class="form-group">
+              <label>No. of Travellers</label>
+              <input type="number" name="Number of Travellers" min="1" max="100" placeholder="2"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message / Special Requirements</label>
+            <textarea name="Message" placeholder="Tell us your budget, destination preferences, or any special requirements..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Enquiry — We'll Call You Back →</button>
+        </form>
+        <div id="form-thanks" style="display:none;margin-top:1rem;background:#f0fdf4;border-left:3px solid #22c55e;padding:14px 16px;font-size:.88rem;color:#166534;line-height:1.6">✓ <strong>Thank you!</strong> Your enquiry has been received. Our team will call you back very soon. For urgent help call <a href="tel:+919630835683" style="color:#d63384;font-weight:600">9630835683</a>.</div>
+      </div>
+    </div>
+
+  </div></div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="W">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-name">Vaishali Tour &amp; Travels</div>
+        <span class="footer-city">Est. 2009 · Bhilai, Chhattisgarh</span>
+        <div class="footer-desc">Your trusted, one-stop travel partner in Bhilai — serving 5,000+ families across Chhattisgarh with honest service and the best prices.</div>
+        <div class="footer-phones">
+          <a href="tel:+919630835683">📞 9630835683</a>
+          <a href="tel:+919752805942">📞 9752805942</a>
+          <a href="tel:+919300788555">📞 9300788555</a>
+        </div>
+        <a class="footer-email" href="mailto:Vaishalitourt@gmail.com">✉ Vaishalitourt@gmail.com</a>
+        <div class="footer-hours">
+          Open Mon – Sun, 9 AM to 9 PM<br>
+          <a href="https://maps.app.goo.gl/wxjisRn4LZ5dXN8j9" target="_blank" rel="noopener">📍 View on Google Maps →</a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-col-title">Our Services</div>
+        <div class="foot-col-links">
+          <a onclick="goto('services')">Rail Tickets</a>
+          <a onclick="goto('services')">Flight Tickets</a>
+          <a onclick="goto('services')">Bus Tickets</a>
+          <a onclick="goto('services')">Hotel Booking</a>
+          <a onclick="goto('services')">Cab / Taxi</a>
+          <a onclick="goto('services')">Pilgrimage Tours</a>
+          <a onclick="goto('services')">Visa Assistance</a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-col-title">Tour Packages</div>
+        <div class="foot-col-links">
+          <a onclick="goto('packages')">Golden Triangle</a>
+          <a onclick="goto('packages')">Goa Beach Holiday</a>
+          <a onclick="goto('packages')">Manali &amp; Shimla</a>
+          <a onclick="goto('packages')">Andaman Islands</a>
+          <a onclick="goto('packages')">Bangkok &amp; Pattaya</a>
+          <a onclick="goto('packages')">Bali Tours</a>
+          <a onclick="goto('packages')">Kerala Tours</a>
+          <a onclick="goto('packages')">Kashmir Tours</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Vaishali Tour &amp; Travels, Bhilai, Chhattisgarh. All rights reserved.</span>
+      <span class="footer-copy">Made with ❤ for Indian travellers</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-top" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- WhatsApp Float -->
+<a id="whatsapp-btn"
+   href="https://api.whatsapp.com/send?phone=919630835683&text=Hello%20Vaishali%20Tour%20%26%20Travels!%20I%20want%20to%20enquire%20about%20a%20trip."
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+/* ── NAV SCROLL ─────────────────────────── */
+var navEl = document.getElementById('nav');
+window.addEventListener('scroll', function() {
+  navEl.classList.toggle('solid', window.scrollY > 60);
+  document.getElementById('back-top').classList.toggle('show', window.scrollY > 500);
+});
+
+/* ── MOBILE MENU ────────────────────────── */
+document.getElementById('ham-btn').addEventListener('click', function() {
+  document.getElementById('mob-menu').classList.add('open');
+});
+document.getElementById('mob-close').addEventListener('click', function() {
+  document.getElementById('mob-menu').classList.remove('open');
+});
+document.querySelectorAll('.mob-link').forEach(function(el) {
+  el.addEventListener('click', function() {
+    document.getElementById('mob-menu').classList.remove('open');
+  });
+});
+
+/* ── SCROLL TO SECTION ──────────────────── */
+function goto(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('mob-menu').classList.remove('open');
+}
+
+/* ── HERO SLIDESHOW ─────────────────────── */
+var HERO_SLIDES = [
+  { src: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1600&q=85&auto=format&fit=crop', alt: 'Taj Mahal, Agra — India' },
+  { src: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=85&auto=format&fit=crop', alt: 'Amber Fort, Rajasthan' },
+  { src: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1600&q=85&auto=format&fit=crop', alt: 'Goa beach sunset' },
+  { src: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600&q=85&auto=format&fit=crop', alt: 'Manali snow mountains' },
+  { src: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=85&auto=format&fit=crop', alt: 'Bali temple at sunset' },
+  { src: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1600&q=85&auto=format&fit=crop', alt: 'Kerala backwaters' }
+];
+var FALLBACK_SLIDES = [
+  'https://picsum.photos/seed/india/1600/900',
+  'https://picsum.photos/seed/rajasthan/1600/900',
+  'https://picsum.photos/seed/goa/1600/900',
+  'https://picsum.photos/seed/himalayas/1600/900',
+  'https://picsum.photos/seed/bali/1600/900',
+  'https://picsum.photos/seed/kerala/1600/900'
+];
+var slideIdx = 0;
+var heroImg = document.getElementById('hero-img');
+var dotsWrap = document.getElementById('hero-dots');
+
+// Build dots
+HERO_SLIDES.forEach(function(_, i) {
+  var d = document.createElement('button');
+  d.className = 'hero-dot' + (i === 0 ? ' active' : '');
+  d.setAttribute('aria-label', 'Slide ' + (i + 1));
+  d.onclick = function() { setSlide(i); };
+  dotsWrap.appendChild(d);
+});
+
+function setSlide(i) {
+  slideIdx = ((i % HERO_SLIDES.length) + HERO_SLIDES.length) % HERO_SLIDES.length;
+  var slide = HERO_SLIDES[slideIdx];
+  heroImg.style.opacity = '0';
+  setTimeout(function() {
+    heroImg.src = slide.src;
+    heroImg.alt = slide.alt;
+    heroImg.onerror = function() {
+      this.onerror = null;
+      this.src = FALLBACK_SLIDES[slideIdx];
+    };
+    heroImg.onload = function() { heroImg.style.opacity = '1'; };
+    document.querySelectorAll('.hero-dot').forEach(function(d, j) {
+      d.classList.toggle('active', j === slideIdx);
+    });
+  }, 300);
+}
+
+heroImg.style.transition = 'opacity .5s';
+var slideTimer = setInterval(function() { setSlide(slideIdx + 1); }, 5500);
+
+/* ── SCROLL REVEAL ──────────────────────── */
+var revealObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      revealObs.unobserve(entry.target); // stop observing once revealed
+    }
+  });
+}, { threshold: 0.07 });
+document.querySelectorAll('.rv').forEach(function(el) { revealObs.observe(el); });
+
+/* ── FORM AJAX SUBMIT ─────────────────── */
+var enquiryForm = document.getElementById('enquiry-form');
+if (enquiryForm) {
+  enquiryForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = this.querySelector('.form-submit');
+    var thanks = document.getElementById('form-thanks');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(res) {
+      if (res.ok) {
+        enquiryForm.reset();
+        btn.style.display = 'none';
+        thanks.style.display = 'block';
+      } else {
+        btn.textContent = 'Send Enquiry — We\'ll Call You Back →';
+        btn.disabled = false;
+        alert('There was an issue. Please call us directly on 9630835683.');
+      }
+    }).catch(function() {
+      // Fallback: open mail client
+      window.location.href = 'mailto:Vaishalitourt@gmail.com?subject=Tour Enquiry from Website';
+      btn.textContent = 'Send Enquiry — We\'ll Call You Back →';
+      btn.disabled = false;
+    });
+  });
+}
+</script>
+</body>
+</html>
